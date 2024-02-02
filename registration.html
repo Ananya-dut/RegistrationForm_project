@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="login.css">
+
+<body>
+
+
+    <form onsubmit="register()">
+
+        <table class="login-form">
+            <tr>
+                <td>
+                    <h3>Registration Form</h3>
+                </td>
+            </tr>
+            <tr>
+                <td><span class="label">Email or Phone</span></td>
+            </tr>
+            <tr>
+                <td><input class="input-box" type="email" name="" id="email" required></td>
+            </tr>
+            <tr>
+                <td><span class="label">Name</span></td>
+            </tr>
+            <tr>
+                <td><input class="input-box" type="text" name="" id="name" required></td>
+            </tr>
+            <tr>
+                <td><span class="label">Mobile no <span id="mobile_err"></span></span></td>
+            </tr>
+            <tr>
+                <td><input class="input-box" type="number" name="" id="mobile" required onblur="mobile_validate()"></td>
+            </tr>
+            <tr>
+                <td><span class="label">Password <span id="password_err"></span></span></td>
+            </tr>
+            <tr>
+                <td><input class="input-box" type="password" name="" id="password" required onblur="password_validate()"></td>
+            </tr>
+            <tr>
+                <td><input class="login-btn" type="Submit" value="Login" name="" id="" required></td>
+            </tr>
+            <tr>
+                <td align="center" style="padding: 5%;"><span class="link1">not a member?<a href="">Signup
+                            now</a></span></td>
+            </tr>
+        </table>
+    </form>
+    <script src="login.js"></script>
+</body>
+
+</html>
